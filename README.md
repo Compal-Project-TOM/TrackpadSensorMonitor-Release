@@ -1,8 +1,14 @@
-# TrackpadSensorMonitor-Release
+# Trackpad Sensor Monitor
 
 即時顯示 Trackpad 感測器數據的桌面監控程式。
 
 ## 版本紀錄
+
+### v1.2.0
+
+- 新增原始數據錄製：以「Record」按鈕將每個接收到的影格串流寫入 CSV
+- CSV 檔頭記錄 metadata（型號、版面位置、增益、基準值），後接 `t_ms` 與依裝置順序排列的各感測器欄位
+- 斷線、切換型號或關閉程式時自動停止錄製
 
 ### v1.1.0
 
