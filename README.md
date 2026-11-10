@@ -4,6 +4,12 @@
 
 ## 版本紀錄
 
+### v1.3.3
+
+- ADC 增益改用 `uart_link.AdcGain`，取代本地的增益／代碼對照表，增益倍率由 `AdcGain.multiplier` 產生
+- 回報的增益改由 `AdcGainResponse.gain_multiplier` 解碼，遇到未知代碼仍會顯示警告
+- 相依套件 `uart-link` 需升級至 0.5.1 以上
+
 ### v1.3.2
 
 - 工具列的 Record 獨立成「Record」群組，並以分隔線與 Connect / Baseline 區隔，與 Gain 群組一致
@@ -76,3 +82,4 @@
 - 視窗標題與打包輸出（exe 名稱、zip）帶有版本號
 - 感測器版面由 JSON 檔載入，優先使用使用者可編輯的版面目錄
 - 感測器熱圖、校正格顯示、裝置 ID 顯示、ADC 增益與閒置值處理
+
